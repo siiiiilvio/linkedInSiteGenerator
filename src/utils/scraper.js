@@ -1,5 +1,5 @@
+const fs = require('fs');
 const puppeteer = require('puppeteer');
-const memoryCache = require('memory-cache');
 const parser = require('./parser');
 const { cookies } = require('./constants');
 
@@ -18,7 +18,7 @@ const scraper = async target => {
     await page.goto(target, { waitUntil: 'networkidle2' });
     const bodyHTML = await page.evaluate(() => document.body.innerHTML);
     const profile = parser(bodyHTML);
-    memoryCache.put(`__profile__`, profile);
+    fs.writeFileSync('profile.json', JSON.stringify(profile));
     return profile;
 };
 

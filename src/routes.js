@@ -15,9 +15,11 @@ router.get('/', homepage, (req, res) => {
     renderView(res, 'index', query);
 });
 
-router.get('/update', update, (req, res) => {
-    renderView(res, 'update');
-});
+if (process.NODE_ENV === 'development') {
+    router.get('/update', update, (req, res) => {
+        renderView(res, 'update');
+    });
+}
 
 router.post('/contact', async (req, res) => {
     await mail(req.body);

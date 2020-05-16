@@ -1,12 +1,12 @@
 const fs = require('fs');
-const scraper = require('../utils/scraper');
-const target = process.env.SCRAPE_TARGET;
 
 const homepage = async (req, res, next) => {
-    const profile =
-        process.env.NODE_ENV === 'production'
-            ? JSON.parse(fs.readFileSync('profile.json'))
-            : await scraper(target);
+    let profile;
+    try {
+        profile = JSON.parse(fs.readFileSync('profile.json'));
+    } catch (error) {
+        console.log('Error: ', error);
+    }
     res.profile = profile;
     next();
 };

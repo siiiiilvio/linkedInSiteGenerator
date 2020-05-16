@@ -11,7 +11,7 @@ const renderView = (res, view, query) => {
 
 router.get('/', homepage, (req, res) => {
     const query = req.query;
-    renderView(res, 'index', query);
+    res.profile ? renderView(res, 'index', query) : res.send('Update profile');
 });
 
 router.post('/contact', async (req, res) => {

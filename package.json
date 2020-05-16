@@ -11,6 +11,7 @@
         "dotenv": "^8.2.0",
         "ejs": "^3.0.2",
         "express": "^4.17.1",
+        "express-robots": "^0.1.6",
         "helmet": "^3.22.0",
         "nodemailer": "^6.4.6",
         "nodemon": "^2.0.3",
@@ -32,6 +33,7 @@
     "scripts": {
         "dev": "DEBUG=app,app:* NODE_ENV=development node src/app.js",
         "build-server": "babel -d ./build ./src -s --copy-files",
+        "update-profile": "node src/utils/scraper.js",
         "start": "npm run build-server && NODE_ENV=production node ./build/app.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },

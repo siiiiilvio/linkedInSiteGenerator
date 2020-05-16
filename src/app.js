@@ -3,6 +3,7 @@ const express = require('express');
 const path = require('path');
 const debug = require('debug')('app');
 const helmet = require('helmet');
+const robots = require('express-robots');
 const router = require('./routes');
 
 const host = process.env.HOST;
@@ -16,6 +17,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.use(helmet());
 
 app.use(express.urlencoded({ extended: true }));
+app.use(robots({ UserAgent: '*', Disallow: '/' }));
 
 app.use('/', router);
 

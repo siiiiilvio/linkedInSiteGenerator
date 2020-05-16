@@ -161,3 +161,9 @@ p.it_txt {
 .copyright img {
     vertical-align: bottom;
 }
+
+@media screen and (max-width: 736px) {
+    p.ex_ttl {
+        font-size: 18px;
+    }
+}

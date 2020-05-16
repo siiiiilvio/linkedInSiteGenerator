@@ -164,6 +164,6 @@ p.it_txt {
 
 @media screen and (max-width: 736px) {
     p.ex_ttl {
-        font-size: 18px;
+        font-size: 18px !important;
     }
 }

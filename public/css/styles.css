@@ -20,10 +20,6 @@ li:last-child {
 	overflow:hidden;
 }
 
-.work_sections_class section h2{
-	font-size:30px;
-}
-
 .work_sections_class section h2 i{
 	margin-right:10px;
 	border-bottom:4px solid #DDA898;

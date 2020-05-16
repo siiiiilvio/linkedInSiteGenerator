@@ -150,7 +150,7 @@ p.it_txt {
 	margin-bottom:15px
 }
 
-.ex_loc, .ex_date, .ex_dur {
+.ex_loc, .ex_date, .ex_dur, .ex_field {
 	font-size:15px !important;
 }
 
@@ -163,6 +163,10 @@ p.it_txt {
 }
 
 @media screen and (max-width: 736px) {
+    .work_sections_class section p {
+        font-size: 16px;
+    }
+
     p.ex_ttl {
         font-size: 18px !important;
     }

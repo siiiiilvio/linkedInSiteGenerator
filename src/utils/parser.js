@@ -99,7 +99,7 @@ const parser = scrape => {
         fieldsItems.each(function (i, elem) {
             fieldsArray.push($(elem).text());
         });
-        const time = $(this).find('.education__item education__item--duration').html();
+        const time = $(this).find('.education__item.education__item--duration').html();
         const society = $(this)
             .find('.education__item education__item--activities-and-societies')
             .text();

@@ -99,7 +99,7 @@
                                             </div>
                                             <div class="edu_text">
                                                 <p class="ex_ttl"><%- education.school %></p>
-                                                <p>
+                                                <p class="ex_field">
                                                 <% education.fieldsArray.forEach((field, index) => { %>
                                                     <span><%- field %></span>
                                                     <%if (index !== education.fieldsArray.length - 1) { %>
@@ -107,9 +107,9 @@
                                                     <% } %>
                                                 <% }); %>
                                                 </p>
-                                                <p><%- education.time %></p>
+                                                <p class="ex_dur"><%- education.time %></p>
                                                 <p><%- education.society %></p>
-                                                <p><%- education.curriculum %></p>
+                                                <p class="ex_desc"><%- education.curriculum %></p>
                                             </div>
                                         </div>
                                     <% }); %>

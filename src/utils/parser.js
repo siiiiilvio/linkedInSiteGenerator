@@ -94,7 +94,11 @@ const parser = scrape => {
             saveImageToDisk(educationLogoUrl, `./public/images/education/${i}.jpg`);
         const school = $(this).find('.result-card__title').text();
         const degree = $(this).find('.result-card__subtitle').text();
-        const field = $(this).find('.education__item education__item--degree-info').text();
+        const fieldsArray = [];
+        const fieldsItems = $(this).find('.education__item.education__item--degree-info');
+        fieldsItems.each(function (i, elem) {
+            fieldsArray.push($(elem).text());
+        });
         const time = $(this).find('.education__item education__item--duration').html();
         const society = $(this)
             .find('.education__item education__item--activities-and-societies')
@@ -105,7 +109,7 @@ const parser = scrape => {
         educationArray.push({
             school,
             degree,
-            field,
+            fieldsArray,
             time,
             society,
             curriculum,

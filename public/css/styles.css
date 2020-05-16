@@ -1,0 +1,167 @@
+br {
+    content: " ";
+    display: block;
+    margin-top: 10px;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+li {
+    margin-bottom: 25px;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+.work_sections_class {
+	overflow:hidden;
+}
+
+.work_sections_class section h2{
+	font-size:30px;
+}
+
+.work_sections_class section h2 i{
+	margin-right:10px;
+	border-bottom:4px solid #DDA898;
+	padding-bottom:10px
+}
+
+.work_sections_class section p{
+	margin-bottom:0;
+	font-size:18px;
+	line-height:25px;
+	color:#000
+}
+
+.work_sections_class .ex_text {
+    padding-bottom: 40px;
+}
+
+span.title_border {
+	background-color:#DDA898;
+	width:50px;
+	height:4px;
+	display:block;
+	margin-top:10px;
+	border-radius:5px
+}
+
+p.ex_ttl {
+	font-weight:bold;
+	margin-bottom:0 !important;
+	font-size:21px !important
+}
+
+p.it_txt {
+	font-style:italic;
+	font-weight:600
+}
+
+.ex_container {
+    overflow:hidden;
+    display: flex;
+}
+
+.ex_container .ex_img {
+    float:left;
+    min-width:50px;
+	width:50px;
+	margin-top:5px;
+	margin-right:5%;
+}
+
+.ex_container .ex_img img{
+	border-radius:3px
+}
+
+.ex_container .ex_img img{
+	width:100%
+}
+
+.ex_container .ex_text {
+	float:left;
+	border-bottom:1px solid #E6E9ED;
+	margin-bottom:40px
+}
+
+.ex_container .ex_com {
+	font-weight:500
+}
+
+.edu_container {
+    overflow:hidden;
+    display: flex;
+}
+
+.edu_container .edu_img {
+    float:left;
+    min-width: 50px;
+	width:50px;
+	margin-top:8px;
+	margin-right:35px
+}
+
+.edu_container .edu_img img{
+	border-radius:7px
+}
+
+.edu_container .edu_img img{
+	width:100%
+}
+
+.edu_container .edu_text {
+	float:left;
+	margin-bottom:25px
+}
+
+.edu_container:last-child .edu_text {
+    margin-bottom: 0;
+}
+
+.lic_container {
+	overflow:hidden;
+}
+
+.lic_container .lic_img {
+	float:left;
+	width:50px;
+	margin-top:8px;
+	margin-right:35px
+}
+
+.lic_container .lic_img img{
+	border-radius:7px
+}
+
+.lic_container .lic_img img{
+	width:100%
+}
+
+.lic_container .lic_text {
+	float:left;
+	margin-bottom:10px
+}
+
+.no_margin {
+	margin:0 !important
+}
+
+.sngl_lng {
+	margin-bottom:15px
+}
+
+.ex_loc, .ex_date, .ex_dur {
+	font-size:15px !important;
+}
+
+.ex_desc {
+    margin-top: 15px;
+}
+
+.copyright img {
+    vertical-align: bottom;
+}

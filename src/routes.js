@@ -1,6 +1,5 @@
 const express = require('express');
 const homepage = require('./controllers/homepage');
-const update = require('./controllers/update');
 const mail = require('./utils/mail');
 
 const router = express.Router();
@@ -13,10 +12,6 @@ const renderView = (res, view, query) => {
 router.get('/', homepage, (req, res) => {
     const query = req.query;
     renderView(res, 'index', query);
-});
-
-router.get('/update', update, (req, res) => {
-    renderView(res, 'update');
 });
 
 router.post('/contact', async (req, res) => {

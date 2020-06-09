@@ -1324,7 +1324,7 @@ input, select, textarea {
 			transition: none !important;
 		}
 
-	body, input, textarea, select {
+	body, input, textarea, select, button {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
 		color: #777777;
@@ -1334,7 +1334,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 1680px) {
 
-			body, input, textarea, select {
+			body, input, textarea, select, button {
 				font-size: 15pt;
 			}
 
@@ -1342,7 +1342,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 1280px) {
 
-			body, input, textarea, select {
+			body, input, textarea, select, button {
 				font-size: 14pt;
 			}
 
@@ -1350,7 +1350,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
-			body, input, textarea, select {
+			body, input, textarea, select, button {
 				font-size: 12pt;
 			}
 
@@ -1358,7 +1358,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 360px) {
 
-			body, input, textarea, select {
+			body, input, textarea, select, button {
 				font-size: 11pt;
 			}
 

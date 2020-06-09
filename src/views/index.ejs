@@ -14,6 +14,11 @@
         <link rel="stylesheet" href="../../css/styles.css" />
         <noscript><link rel="stylesheet" href="../../css/noscript.css" /></noscript>
         <link rel="icon" type="image/x-icon" href="../images/favicon.png" />
+        <script>
+            function onSubmit(token) {
+                document.getElementById('submit').click();
+            }
+        </script>
 	</head>
 	<body class="is-preload">
 
@@ -155,7 +160,7 @@
                                     <% } %>
 									<h2>Contact Me</h2>
 								</header>
-								<form id="contact" action="/contact" method="POST">
+								<form id="contact-me" action="/contact" method="POST">
 									<div>
 										<div class="row">
 											<div class="col-6 col-12-medium">
@@ -171,13 +176,17 @@
 												<textarea name="message" placeholder="Message" rows="6"></textarea>
 											</div>
 											<div class="col-12">
-												<input type="submit" value="Send Message" />
-											</div>
+                                                <button id="submit" style="display:none;"></button>
+                                                <button class="g-recaptcha" 
+                                                    data-sitekey="6LeungEVAAAAADCglqDVYD01w-Ai33d3QWcDPhWj" 
+                                                    data-callback='onSubmit' 
+                                                    data-action='submit'
+                                                    type="submit">Submit</button>
+                                            </div>
 										</div>
 									</div>
-								</form>
+                                </form>
 							</article>
-
 					</div>
 
 				<!-- Footer -->
@@ -194,6 +203,7 @@
 			<script src="../../js/browser.min.js"></script>
 			<script src="../../js/breakpoints.min.js"></script>
 			<script src="../../js/util.js"></script>
-			<script src="../../js/main.js"></script>
+            <script src="../../js/main.js"></script>
+            <script src="https://www.google.com/recaptcha/api.js"></script>
 	</body>
 </html>
